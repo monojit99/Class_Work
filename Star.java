@@ -1,3 +1,4 @@
+import java.util.Scanner;
 public class Star {
 
 public static void printStars(int n) {
@@ -26,8 +27,10 @@ System.out.println();
 
 public static void main(String args[]) {
 
-int n = 5; //Number of Rows
-
+int n; //Number of Rows
+System.out.println(""enter no. of rows:");
+Scanner sc=new Scanner(System.in);
+n=sc.nextInt();
 printStars(n);
 
 }
