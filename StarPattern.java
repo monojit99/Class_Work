@@ -1,35 +1,25 @@
-import java.util.Scanner;
-
 public class StarPattern {
 
-public static void main(String[] args) {
+	public static void main(String[] args) {
+		int i,j,k=1;
+		for(i=1;i<=5;i++)//outer loop 
+		{
+			for( j=1;j<=9;j++)//inner loop 
+			{
+		if(j>=i&&j<=10-i&&k==1)//star printing logic 
+		{
+			System.out.print("*");
+			k=0;
+		}
+		else {
+			System.out.print(" ");
+			k=1;
+		}
+		
+		}
+			System.out.print("\n");
+		}
+	}
 
-Scanner S = new Scanner(System.in); //Input
 
-System.out.println("Enter row value ");
-
-int r = S.nextInt();
-
-for (int i = r; i >= 1; i--) { 
-
-for (int j = r; j > i; j--) { 
-
-System.out.print(" "); // Prints Blank space
-
-}
-
-for (int k = 1; k <= i; k++) {
-
-System.out.print("*"); //Prints *
-
-}
-
-System.out.println(" "); //Prints blank spaces
-
-}
-
-S.close();
-
-}
-
-}
+	}
